@@ -30,8 +30,8 @@ public class AuthData {
     	if (!users.containsKey(username)) {
             throw new IllegalArgumentException("User does not exist");
         }
+    	tokenToUsernameMap.remove(users.get(username).getToken());
     	users.remove(username);
-        tokenToUsernameMap.remove(users.get(username).getToken());
         userToRolesMap.remove(username);
     }
     

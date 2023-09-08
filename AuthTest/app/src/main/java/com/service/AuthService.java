@@ -5,11 +5,12 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.lang3.RandomStringUtils;
-import org.mindrot.jbcrypt.BCrypt;
 
 import com.model.AuthData;
 import com.model.Role;
 import com.model.User;
+
+import jBCrypt.BCrypt;
 
 public class AuthService {
 	
